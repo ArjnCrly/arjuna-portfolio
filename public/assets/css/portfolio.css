@@ -631,22 +631,29 @@ a, button, [role="button"], .theme-toggle-switch, .hero-hire-btn, .project-row-i
 .marquee-ticker-wrap {
   width: 100%;
   overflow: hidden;
+  display: flex;
+  user-select: none;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   background: var(--bg-surface);
   padding: 1.15rem 0;
   position: relative;
   z-index: 4;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
 }
 
-.marquee-ticker-content {
+.marquee-ticker-track {
   display: flex;
-  white-space: nowrap;
-  animation: tickerScroll 24s linear infinite;
-  gap: 2.5rem;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 2.75rem;
+  padding-right: 2.75rem;
+  animation: tickerInfiniteScroll 26s linear infinite;
+  will-change: transform;
 }
 
-.marquee-ticker-content:hover {
+.marquee-ticker-wrap:hover .marquee-ticker-track {
   animation-play-state: paused;
 }
 
@@ -660,6 +667,7 @@ a, button, [role="button"], .theme-toggle-switch, .hero-hire-btn, .project-row-i
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .ticker-dot {
@@ -668,9 +676,13 @@ a, button, [role="button"], .theme-toggle-switch, .hero-hire-btn, .project-row-i
   text-shadow: 0 0 10px rgba(50, 130, 184, 0.6);
 }
 
-@keyframes tickerScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+@keyframes tickerInfiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* ==========================================================================

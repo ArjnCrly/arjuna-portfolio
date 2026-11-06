@@ -81,14 +81,24 @@
       </a>
     </section>
 
-    <div class="marquee-ticker-wrap">
-      <div class="marquee-ticker-content">
-        <div class="ticker-item"><span class="ticker-dot">•</span> UI/UX Designer </div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> Web Developer </div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> Frontend Developer </div>
+    <div class="marquee-ticker-wrap" aria-label="Spesialisasi &amp; Peran Utama">
+      <div class="marquee-ticker-track">
+        <div class="ticker-item"><span class="ticker-dot">•</span> UI/UX Designer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Web Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Frontend Developer</div>
         <div class="ticker-item"><span class="ticker-dot">•</span> Backend Developer</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> Mobile Developer </div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> Video Editor </div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Laravel Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Fullstack Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Mobile Developer</div>
+      </div>
+      <div class="marquee-ticker-track" aria-hidden="true">
+        <div class="ticker-item"><span class="ticker-dot">•</span> UI/UX Designer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Web Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Frontend Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Backend Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Laravel Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Fullstack Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Mobile Developer</div>
       </div>
     </div>
 
