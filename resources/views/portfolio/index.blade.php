@@ -677,10 +677,10 @@
           </p>
         </div>
 
-]        <div class="social-icons-wrapper reveal-init reveal-stagger-2">
+        <div class="social-icons-wrapper reveal-init reveal-stagger-2">
           <div class="social-icons-dock">
             
-]            <a href="https://wa.me/{{ $profile->whatsapp ?? '6282126908940' }}" 
+            <a href="https://wa.me/{{ $profile->whatsapp ?? '6282126908940' }}" 
                target="_blank" 
                rel="noopener" 
                class="social-icon-btn icon-whatsapp" 
@@ -703,7 +703,7 @@
               <span class="icon-tooltip">Email</span>
             </a>
 
-]            <a href="{{ $profile->linkedin_url ?? 'https://linkedin.com/in/arjunacarly' }}" 
+            <a href="{{ $profile->linkedin_url ?? 'https://linkedin.com/in/arjunacarly' }}" 
                target="_blank" 
                rel="noopener" 
                class="social-icon-btn icon-linkedin" 
