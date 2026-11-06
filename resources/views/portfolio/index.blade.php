@@ -9,14 +9,6 @@
 </head>
 <body>
 
-  <!-- ========================================================================
-       CIRCULAR THEME RIPPLE OVERLAY (Frame 00:04 - 00:08)
-       ======================================================================== -->
-
-
-  <!-- ========================================================================
-       1. FLOATING PILL ISLAND NAVBAR (Frame 00:00 - 00:08)
-       ======================================================================== -->
   <header class="site-header-floating">
     <div class="nav-pill-island">
       <a href="#home" class="nav-pill-brand">
@@ -33,7 +25,6 @@
       </nav>
 
       <div class="nav-pill-actions">
-        <!-- Circular Ripple Theme Toggle Switch -->
         <button type="button" class="theme-toggle-switch" id="theme-toggle-switch" title="Ubah Mode Gelap / Terang">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
@@ -41,7 +32,6 @@
           </svg>
         </button>
 
-        <!-- Pill Button: Hubungi Saya / Kontak -->
         <a href="#kontak" class="hero-hire-btn">Hubungi Saya</a>
 
         <button type="button" class="ctrl-btn nav-mobile-toggle" id="mobile-toggle-btn" aria-label="Menu Mobile">
@@ -56,36 +46,25 @@
   </header>
 
   <main>
-    <!-- ======================================================================
-         2. HERO CINEMATIC SECTION (Frame 00:00 - 00:08)
-         - 4 Viewfinder Corner Brackets
-         - Giant Outlined Typography Layer BEHIND Portrait
-         - Foreground Center Portrait of Arjuna Carly (Folded Arms)
-         - Right Edge Vertical Scroll Indicator
-         ====================================================================== -->
+
     <section class="hero-cinematic" id="home">
-      <!-- 4 Viewfinder Editorial Corner Brackets -->
       <div class="corner-bracket corner-tl"></div>
       <div class="corner-bracket corner-tr"></div>
       <div class="corner-bracket corner-bl"></div>
       <div class="corner-bracket corner-br"></div>
 
-      <!-- Giant Typography Layer matching Reference Layout (BEHIND PORTRAIT) -->
       <div class="hero-outline-layer" aria-hidden="true">
         <div class="hero-name-split-wrap">
-          <!-- Line 1: Arjuna Carly (Slide In Kiri -> Kanan, Posisi Kepala, Rata Kiri) -->
           <div class="hero-name-line hero-name-line-top" id="hero-name-top">
             <span class="hero-name-text">ARJUNA CARLY</span>
           </div>
 
-          <!-- Line 2: Dhymas Mahendra (Slide In Kanan -> Kiri, Posisi Lengan Kanan, Stagger Rata Kanan) -->
           <div class="hero-name-line hero-name-line-bottom" id="hero-name-bottom">
             <span class="hero-name-text">DHYMAS MAHENDRA</span>
           </div>
         </div>
       </div>
 
-      <!-- Center Foreground Subject (Portrait of Arjuna) -->
       <div class="hero-portrait-stage">
         <div class="hero-portrait-wrapper">
           <img src="data:image/png;base64,{{ $photoB64 }}" 
@@ -96,42 +75,23 @@
         </div>
       </div>
 
-      <!-- Right Edge Vertical Scroll Label -->
       <a href="#tentang" class="hero-side-scroll" title="Gulir ke bagian tentang saya">
         <span>GULIR KE BAWAH</span>
         <span class="side-scroll-arrow">↓</span>
       </a>
     </section>
 
-    <!-- ======================================================================
-         3. HORIZONTAL RUNNING MARQUEE TICKER (Frame 00:01 - 00:06)
-         ====================================================================== -->
     <div class="marquee-ticker-wrap">
       <div class="marquee-ticker-content">
-        <div class="ticker-item"><span class="ticker-dot">•</span> DESAIN UI/UX FIGMA</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> FRONTEND REACT</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> TAILWIND CSS</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> BACKEND LARAVEL</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> JAVASCRIPT MODERN (ES6+)</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> ARSITEKTUR PHP MVC</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> PENGEMBANGAN RESTFUL API</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> MANAJEMEN AGILE SCRUM</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> BASIS DATA MYSQL &amp; POSTGRESQL</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> FRAMEWORK BOOTSTRAP 5</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> STANDAR WEB HTML5 &amp; CSS3</div>
-        <!-- Loop duplicate -->
-        <div class="ticker-item"><span class="ticker-dot">•</span> DESAIN UI/UX FIGMA</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> FRONTEND REACT</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> TAILWIND CSS</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> BACKEND LARAVEL</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> JAVASCRIPT MODERN (ES6+)</div>
-        <div class="ticker-item"><span class="ticker-dot">•</span> ARSITEKTUR PHP MVC</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> UI/UX Designer </div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Web Developer </div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Frontend Developer </div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Backend Developer</div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Mobile Developer </div>
+        <div class="ticker-item"><span class="ticker-dot">•</span> Video Editor </div>
       </div>
     </div>
 
-    <!-- ======================================================================
-         4. SECTION 01: TENTANG SAYA (Frame 00:09)
-         ====================================================================== -->
     <section class="section-wrap statement-section reveal-init" id="tentang">
       <div class="container">
         
@@ -151,10 +111,8 @@
           Frontend developer &amp; UI/UX designer yang fokus <span class="statement-highlight">membangun aplikasi web skalabel</span>, merancang wireframe &amp; prototipe interaktif di <span class="statement-highlight">Figma</span>, serta mengembangkan arsitektur backend tangguh dengan <span class="statement-highlight">Laravel &amp; PHP</span>.
         </div>
 
-        <!-- Soft Skills & Prinsip Kerja Cards -->
         <div class="about-highlights-grid">
           
-          <!-- 1. Leadership & Agile Scrum -->
           <div class="about-highlight-card">
             <div class="highlight-card-top">
               <div class="highlight-icon-box">
@@ -178,7 +136,6 @@
             </div>
           </div>
 
-          <!-- 2. Komunikasi & Kolaborasi -->
           <div class="about-highlight-card">
             <div class="highlight-card-top">
               <div class="highlight-icon-box">
@@ -199,7 +156,6 @@
             </div>
           </div>
 
-          <!-- 3. Problem Solving & User Empathy -->
           <div class="about-highlight-card">
             <div class="highlight-card-top">
               <div class="highlight-icon-box">
@@ -226,9 +182,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         5. SECTION 02: PROYEK
-         ====================================================================== -->
     <section class="section-wrap" id="projek">
       <div class="container">
         
@@ -245,7 +198,6 @@
         </div>
 
         <div class="projects-split-layout">
-          <!-- Left Column: Interactive Projects List -->
           <div class="projects-interactive-list">
             @php $idx = 1; @endphp
             @foreach($projects as $proj)
@@ -287,7 +239,6 @@
             @endforeach
           </div>
 
-          <!-- Right Column: Sticky Live Preview Window with Real High-Fidelity UI Mockups & 3D Tilt -->
           <div class="project-sticky-preview reveal-init reveal-stagger-2">
             <div class="preview-top-bar">
               <span class="preview-counter" id="preview-counter">01 / {{ sprintf('%02d', count($projects)) }}</span>
@@ -297,7 +248,6 @@
 
             <div class="preview-mockup-wrapper">
               
-              <!-- Mockup 1: Hunian Lestari Property Platform -->
               <div class="mockup-item active" id="mockup-proj-1">
                 <div class="browser-frame">
                   <div class="browser-header">
@@ -354,7 +304,6 @@
                 </div>
               </div>
 
-              <!-- Mockup 2: Applied Informatics Research Lab -->
               <div class="mockup-item" id="mockup-proj-2">
                 <div class="browser-frame">
                   <div class="browser-header">
@@ -407,7 +356,6 @@
                 </div>
               </div>
 
-              <!-- Mockup 3: Dual Phone Mockup for PBL Polinema -->
               <div class="mockup-item" id="mockup-proj-3">
                 @if(!empty($projects[2]->image))
                   <div class="browser-frame">
@@ -484,7 +432,6 @@
                 @endif
               </div>
 
-              <!-- Mockup 4: Arjuna Studio Laravel CMS Console -->
               <div class="mockup-item" id="mockup-proj-4">
                 <div class="browser-frame">
                   <div class="browser-header">
@@ -570,7 +517,6 @@
 
             </div>
 
-            <!-- Preview Bottom Details Bar -->
             <div class="preview-bottom-bar">
               <p class="preview-desc-text" id="preview-desc-text">
                 {{ $projects[0]->short_description ?? '' }}
@@ -586,7 +532,6 @@
           </div>
         </div>
 
-        <!-- View All Projects Button -->
         <div class="projects-catalog-cta-wrap reveal-init reveal-stagger-3" style="text-align:center;margin-top:3.5rem;">
           <a href="/projects" class="case-cta-btn secondary" style="display:inline-flex;">
             <span>Lihat Semua Katalog Proyek ({{ count($projects) }})</span>
@@ -597,9 +542,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         6. SECTION 03: KEAHLIAN TEKNOLOGI / GRAF JARINGAN OBSIDIAN
-         ====================================================================== -->
     <section class="section-wrap" id="keahlian">
       <div class="container">
         
@@ -616,7 +558,6 @@
         </div>
 
         <div class="graph-section-grid reveal-init reveal-stagger-2">
-          <!-- Left: Category List Buttons -->
           <div class="graph-sidebar-nav">
             <div class="graph-nav-heading">PILIH BIDANG KEAHLIAN</div>
             <button type="button" class="graph-cat-btn active" data-cluster="all" data-cluster-label="Semua Hubungan Teknologi · 18 Node Terhubung">
@@ -641,7 +582,6 @@
             </button>
           </div>
 
-          <!-- Right: Interactive Canvas Network Graph -->
           <div class="graph-canvas-container">
             <div class="graph-canvas-overlay">KLIK &amp; TARIK NODE UNTUK INTERAKSI</div>
             <canvas id="obsidian-network-canvas"></canvas>
@@ -652,9 +592,7 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         7. SECTION 04: PENGALAMAN & PELATIHAN
-         ====================================================================== -->
+
     <section class="section-wrap" id="pengalaman">
       <div class="container">
         
@@ -714,9 +652,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         8. SECTION 05: KONTAK & MEDIA SOSIAL
-         ====================================================================== -->
     <section class="contact-giant-section" id="kontak">
       <div class="container">
         
@@ -732,12 +667,10 @@
           </p>
         </div>
 
-        <!-- Minimalist Interactive Social Icons Dock -->
-        <div class="social-icons-wrapper reveal-init reveal-stagger-2">
+]        <div class="social-icons-wrapper reveal-init reveal-stagger-2">
           <div class="social-icons-dock">
             
-            <!-- 1. WhatsApp -->
-            <a href="https://wa.me/{{ $profile->whatsapp ?? '6282126908940' }}" 
+]            <a href="https://wa.me/{{ $profile->whatsapp ?? '6282126908940' }}" 
                target="_blank" 
                rel="noopener" 
                class="social-icon-btn icon-whatsapp" 
@@ -749,7 +682,6 @@
               <span class="icon-tooltip">WhatsApp</span>
             </a>
 
-            <!-- 2. Email -->
             <a href="mailto:{{ $profile->email ?? 'arjuna.carly1304@gmail.com' }}" 
                class="social-icon-btn icon-email" 
                title="Email: {{ $profile->email ?? 'arjuna.carly1304@gmail.com' }}" 
@@ -761,8 +693,7 @@
               <span class="icon-tooltip">Email</span>
             </a>
 
-            <!-- 3. LinkedIn -->
-            <a href="{{ $profile->linkedin_url ?? 'https://linkedin.com/in/arjunacarly' }}" 
+]            <a href="{{ $profile->linkedin_url ?? 'https://linkedin.com/in/arjunacarly' }}" 
                target="_blank" 
                rel="noopener" 
                class="social-icon-btn icon-linkedin" 
@@ -776,7 +707,6 @@
               <span class="icon-tooltip">LinkedIn</span>
             </a>
 
-            <!-- 4. GitHub -->
             <a href="{{ $profile->github_url ?? 'https://github.com/arjunacarly' }}" 
                target="_blank" 
                rel="noopener" 
@@ -789,7 +719,6 @@
               <span class="icon-tooltip">GitHub</span>
             </a>
 
-            <!-- 5. Instagram -->
             <a href="{{ $profile->instagram_url ?? 'https://instagram.com/arjunacarly' }}" 
                target="_blank" 
                rel="noopener" 
@@ -812,9 +741,6 @@
 
   </main>
 
-  <!-- ========================================================================
-       10. FOOTER BAR
-       ======================================================================== -->
   <footer class="site-footer-bar">
     <div class="container footer-bar-inner">
       <a href="mailto:{{ $profile->email ?? 'arjuna.carly1304@gmail.com' }}">
