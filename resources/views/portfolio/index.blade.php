@@ -6,7 +6,7 @@
   <title>{{ $profile->full_name ?? 'Arjuna Carly Dhymas Mahendra' }} | Web Developer &amp; UI/UX Portfolio</title>
   <meta name="description" content="Portofolio resmi {{ $profile->full_name ?? 'Arjuna Carly Dhymas Mahendra' }} — Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang. Spesialis UI/UX (Figma), Frontend (React &amp; Tailwind CSS), dan Backend (Laravel &amp; PHP)." />
   <link rel="stylesheet" href="{{ asset('assets/css/portfolio.css') }}?v={{ filemtime(public_path('assets/css/portfolio.css')) }}" />
-  <link rel="preload" as="image" href="/assets/arjuna.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="/assets/arjuna.webp" fetchpriority="high" />
 </head>
 <body>
 
@@ -68,7 +68,7 @@
 
       <div class="hero-portrait-stage">
         <div class="hero-portrait-wrapper">
-          <img src="/assets/arjuna.png" 
+          <img src="/assets/arjuna.webp" 
                 alt="{{ $profile->full_name ?? 'Arjuna Carly Dhymas Mahendra' }}" 
                 class="hero-portrait-img" 
                 id="hero-portrait-img"
