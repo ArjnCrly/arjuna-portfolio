@@ -17,15 +17,15 @@ use App\Http\Controllers\Admin\MessageController;
 |--------------------------------------------------------------------------
 */
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.home');
-Route::get('/arjuna.png', function () {
-    $cutoutPath = LARAVEL_BASE_PATH . '/public/arjuna.png';
+Route::get('/arjuna-photo.png', function () {
+    $cutoutPath = LARAVEL_BASE_PATH . '/public/assets/arjuna.png';
     if (file_exists($cutoutPath)) {
         header('Content-Type: image/png');
         header('Cache-Control: public, max-age=86400');
         readfile($cutoutPath);
         exit;
     }
-    $path = LARAVEL_BASE_PATH . '/public/arjuna-photo.jpg';
+    $path = LARAVEL_BASE_PATH . '/public/assets/arjuna.jpg';
     if (!file_exists($path)) {
         abort(404);
     }
@@ -34,8 +34,8 @@ Route::get('/arjuna.png', function () {
     readfile($path);
     exit;
 })->name('portfolio.photo.png');
-Route::get('/arjuna.jpg', function () {
-    $path = LARAVEL_BASE_PATH . '/public/arjuna.jpg';
+Route::get('/arjuna-photo.jpg', function () {
+    $path = LARAVEL_BASE_PATH . '/public/assets/arjuna.jpg';
     if (!file_exists($path)) {
         abort(404);
     }
