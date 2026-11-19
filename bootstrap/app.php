@@ -8,7 +8,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 class Application {
     public function handleHttpRequest(): void {
         if (session_status() === PHP_SESSION_NONE && !headers_sent() && php_sapi_name() !== 'cli') {
-            $sessPath = LARAVEL_BASE_PATH . '/storage/framework/sessions';
+            $baseStorage = (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) ? '/tmp' : LARAVEL_BASE_PATH;
+            $sessPath = $baseStorage . '/storage/framework/sessions';
             if (!is_dir($sessPath)) {
                 @mkdir($sessPath, 0777, true);
             }
