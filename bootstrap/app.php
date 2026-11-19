@@ -3,26 +3,7 @@
  * Laravel Application Bootstrapper & HTTP Kernel Dispatcher
  */
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
-$laravelApp = new \Illuminate\Foundation\Application(LARAVEL_BASE_PATH);
-\Illuminate\Support\Facades\Facade::setFacadeApplication($laravelApp);
-
-$capsule = new \Illuminate\Database\Capsule\Manager($laravelApp);
-$capsule->addConnection([
-    'driver'   => $_ENV['DB_CONNECTION'] ?? getenv('DB_CONNECTION') ?: 'sqlite',
-    'database' => $_ENV['DB_DATABASE'] ?? getenv('DB_DATABASE') ?: '/tmp/database/database.sqlite',
-    'prefix'   => '',
-]);
-$capsule->setAsGlobal();
-$capsule->bootEloquent();
-
-$laravelApp->singleton('db', function () use ($capsule) {
-    return $capsule->getDatabaseManager();
-});
-$laravelApp->singleton('db.schema', function () use ($capsule) {
-    return $capsule->schema();
-});
+require_once __DIR__ . '/../core/autoload.php';
 
 class Application {
     public function handleHttpRequest(): void {
