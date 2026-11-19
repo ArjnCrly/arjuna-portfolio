@@ -179,7 +179,7 @@
             </div>
             <div class="highlight-label">Problem Solving &amp; User Empathy</div>
             <p class="highlight-desc">
-              Menganalisis kebutuhan pengguna ke dalam spesifikasi sistem (*SRS*) terstruktur, dipadukan ketelitian tinggi (*attention to detail*) dalam menghasilkan solusi antarmuka yang presisi dan ramah pengguna.
+              Menganalisis kebutuhan pengguna ke dalam spesifikasi sistem SRS terstruktur, dipadukan attention to detail dalam menghasilkan solusi antarmuka yang presisi dan ramah pengguna.
             </p>
             <div class="highlight-chips-row">
               <span class="soft-skill-chip">Problem Solving</span>
@@ -204,7 +204,7 @@
         <div class="section-heading-row reveal-init reveal-stagger-1">
           <h2 class="section-giant-title">PROYEK<span class="dot">.</span></h2>
           <p class="section-sub-desc">
-            Kumpulan platform web komersial, profil web laboratorium riset akademik, dan sistem aplikasi yang saya rancang selama perkuliahan maupun kolaborasi mitra industri.
+            Kumpulan proyek dan sistem aplikasi yang saya rancang selama perkuliahan maupun kolaborasi mitra industri.
           </p>
         </div>
 
