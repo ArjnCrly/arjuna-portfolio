@@ -18,31 +18,14 @@ use App\Http\Controllers\Admin\MessageController;
 */
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.home');
 Route::get('/arjuna-photo.png', function () {
-    $cutoutPath = LARAVEL_BASE_PATH . '/public/assets/arjuna.png';
-    if (file_exists($cutoutPath)) {
-        header('Content-Type: image/png');
-        header('Cache-Control: public, max-age=86400');
-        readfile($cutoutPath);
-        exit;
-    }
-    $path = LARAVEL_BASE_PATH . '/public/assets/arjuna.jpg';
-    if (!file_exists($path)) {
-        abort(404);
-    }
-    header('Content-Type: image/jpeg');
-    header('Cache-Control: public, max-age=86400');
-    readfile($path);
+    header('Location: /assets/arjuna.png', true, 302);
     exit;
 })->name('portfolio.photo.png');
+
 Route::get('/arjuna-photo.jpg', function () {
-    $path = LARAVEL_BASE_PATH . '/public/assets/arjuna.jpg';
-    if (!file_exists($path)) {
-        abort(404);
-    }
-    header('Content-Type: image/jpeg');
-    header('Cache-Control: public, max-age=86400');
-    readfile($path);
+    header('Location: /assets/arjuna.jpg', true, 302);
     exit;
+
 })->name('portfolio.photo');
 Route::get('/projects', [PortfolioController::class, 'projects'])->name('portfolio.projects');
 Route::get('/projects/{slug}', [PortfolioController::class, 'showProject'])->name('portfolio.project.show');
