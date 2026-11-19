@@ -17,15 +17,15 @@ use App\Http\Controllers\Admin\MessageController;
 |--------------------------------------------------------------------------
 */
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.home');
-Route::get('/arjuna-photo.png', function () {
-    $cutoutPath = 'C:/Users/ASUS/.gemini/antigravity/brain/05bb87aa-5bb9-4ec1-93d2-8b0534e50f55/scratch/arjuna_cutout.png';
+Route::get('/arjuna.png', function () {
+    $cutoutPath = LARAVEL_BASE_PATH . '/public/arjuna.png';
     if (file_exists($cutoutPath)) {
         header('Content-Type: image/png');
         header('Cache-Control: public, max-age=86400');
         readfile($cutoutPath);
         exit;
     }
-    $path = 'C:/Users/ASUS/.gemini/antigravity/brain/05bb87aa-5bb9-4ec1-93d2-8b0534e50f55/.user_uploaded/media_1793807075773_c68796ee.jpg';
+    $path = LARAVEL_BASE_PATH . '/public/arjuna-photo.jpg';
     if (!file_exists($path)) {
         abort(404);
     }
@@ -34,8 +34,8 @@ Route::get('/arjuna-photo.png', function () {
     readfile($path);
     exit;
 })->name('portfolio.photo.png');
-Route::get('/arjuna-photo.jpg', function () {
-    $path = 'C:/Users/ASUS/.gemini/antigravity/brain/05bb87aa-5bb9-4ec1-93d2-8b0534e50f55/.user_uploaded/media_1793807075773_c68796ee.jpg';
+Route::get('/arjuna.jpg', function () {
+    $path = LARAVEL_BASE_PATH . '/public/arjuna.jpg';
     if (!file_exists($path)) {
         abort(404);
     }
